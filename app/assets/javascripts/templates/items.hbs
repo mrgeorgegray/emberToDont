@@ -1,0 +1,13 @@
+<section role="main">
+  <div class="item">
+    {{outlet}}
+  </div>
+</section>
+
+<ol class="itemlist">
+  {{#each controller}}
+    <li>
+      {{#linkTo "items.show" this}}{{title}}{{/linkTo}}
+    </li>
+  {{/each}}
+</ol>

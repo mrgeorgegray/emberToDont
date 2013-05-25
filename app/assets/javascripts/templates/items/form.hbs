@@ -1,0 +1,14 @@
+<form>
+  <label {{bindAttr for="titleField.field_id"}}>Title</label>
+  {{view Ember.TextField valueBinding="title" name="title" viewName="titleField" placeholder="Title"}}
+
+  <label {{bindAttr for="imageUrlField.elementId"}}>Image URL (optional)</label>
+  {{view Ember.TextField valueBinding="imageUrl" name="imageUrl" viewName="imageUrl" placeholder="http://www.placekitten.com/200/200"}}
+
+  <label {{bindAttr for="commentField.elementId"}}>Description</label>
+  {{view Ember.TextArea valueBinding="comment" name="comment" viewName="comment" }}
+
+  <a href="#" {{action save}} class="btn btn-go">{{buttonTitle}}</a>
+  <a href="#" {{action cancel target="controller"}} class="btn btn-delete">Cancel</a>
+</form>
+
