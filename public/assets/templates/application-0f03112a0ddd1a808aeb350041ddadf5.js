@@ -1,0 +1,1 @@
+window.Ember.TEMPLATES.application=Ember.Handlebars.compile('<header role="banner">\n  <h1>to don\'t</h1>\n</header>\n\n<nav role="primary">\n  {{#linkTo "index"}}Home{{/linkTo}}\n  {{#linkTo "items.index"}}List{{/linkTo}}\n  {{#linkTo "items.new"}}Add{{/linkTo}}\n</nav>\n\n{{outlet}}\n');
