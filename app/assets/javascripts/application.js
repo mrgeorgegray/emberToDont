@@ -25,7 +25,5 @@
 window.App = Ember.Application.create();
 
 $(document).on('click', 'nav a, .itemlist a', function(){
-
   $('html, body').animate({scrollTop:0}, 'fast');
-
 });
